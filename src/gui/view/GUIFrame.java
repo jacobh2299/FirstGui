@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 public class GUIFrame extends JFrame
 {
 	private GuiAppController appController;
+	private GUIPanel firstPanel;
 	
 	public GUIFrame(GuiAppController appController)
 	{
@@ -13,7 +14,7 @@ public class GUIFrame extends JFrame
 		//has to be on the first line.
 		super();
 		this.appController=appController;
-		
+		this.firstPanel = new GUIPanel(appController);
 		//helper Method call
 		setupFrame();
 	}
@@ -21,6 +22,7 @@ public class GUIFrame extends JFrame
 	//helper Method creation
 	private void setupFrame() 
 	{
+		this.setContentPane(firstPanel);
 		this.setTitle("First Gui");
 		this.setSize(500,500);
 		this.setVisible(true);
