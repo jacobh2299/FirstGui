@@ -22,10 +22,12 @@ public class GUIFrame extends JFrame
 	//helper Method creation
 	private void setupFrame() 
 	{
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setContentPane(firstPanel);
 		this.setTitle("First Gui");
 		this.setSize(500,500);
 		this.setVisible(true);
+		
 	}
 	
 	
