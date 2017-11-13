@@ -1,6 +1,5 @@
 package gui.view;
 
-import java.util.*;
 import gui.controller.GuiAppController;
 import javax.swing.JFrame;
 //extends is the key word that inherits things
