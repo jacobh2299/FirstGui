@@ -49,15 +49,21 @@ public class GUIPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent click)
 			{
-				
+				changeBackGroundColor();
+
 			}
 
-			
-		
 		});
 	}
 
-	
+	private void changeBackGroundColor()
+	{
+		int red = (int) (Math.random()*256);
+		int blue = (int) (Math.random()*256);
+		int green = (int) (Math.random()*256);
+
+		this.setBackground(new Color(red,green,blue));
+	}
 	
 	
 	
